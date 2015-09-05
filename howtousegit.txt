@@ -1,0 +1,20 @@
+git clone <from github>
+
+on local-master
+git fetch origin
+git merge --no-ff origin
+
+git branch -b <name of branch>
+git checkout
+
+on local-branch
+git merge --no-ff master
+git add .
+git commit -m "insert comments"
+
+on local-master
+git merge --no-ff local-branch
+? What if someone has updated the remote repository
+? Should we try to fetch and merge the origin to the master first? 
+git push origin master
+
