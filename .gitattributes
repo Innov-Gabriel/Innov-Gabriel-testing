@@ -5,6 +5,10 @@
 *.cs     diff=csharp
 
 # Standard to msysgit
+*.doc	 diff=astextplain
+*.DOC	 diff=astextplain
+*.docx diff=astextplain
+*.DOCX diff=astextplain
 *.dot  diff=astextplain
 *.DOT  diff=astextplain
 *.pdf  diff=astextplain
@@ -13,12 +17,12 @@
 *.RTF	 diff=astextplain
 
 # .gitattributes file in root folder of your git project
-*.docx diff=pandoc
-*.DOCX diff=pandoc
+#*.docx diff=pandoc
+#*.DOCX diff=pandoc
 
 # .gitconfig file in your home folder
-[diff "pandoc"]
-  textconv=pandoc --to=markdown
-  prompt = false
-[alias]
-  wdiff = diff --word-diff=color --unified=1
+#[diff "pandoc"]
+#  textconv=pandoc --to=markdown
+#  prompt = false
+#[alias]
+#  wdiff = diff --word-diff=color --unified=1
